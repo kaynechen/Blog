@@ -4,9 +4,9 @@
   <subtitle>代码改变世界！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/kaynechen/kaynechen.github.io/"/>
+  <link href="https://kaynechen.github.io/"/>
   <updated>2016-11-03T07:54:15.639Z</updated>
-  <id>https://github.com/kaynechen/kaynechen.github.io/</id>
+  <id>https://kaynechen.github.io/</id>
   
   <author>
     <name>Kayne Chen</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>开篇博客</title>
-    <link href="https://github.com/kaynechen/kaynechen.github.io/2016/11/03/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://github.com/kaynechen/kaynechen.github.io/2016/11/03/开篇博客/</id>
+    <link href="https://kaynechen.github.io/2016/11/03/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://kaynechen.github.io/2016/11/03/开篇博客/</id>
     <published>2016-11-03T07:42:27.000Z</published>
     <updated>2016-11-03T07:54:15.639Z</updated>
     
@@ -26,10 +26,10 @@
     
     </summary>
     
-      <category term="程序人生" scheme="https://github.com/kaynechen/kaynechen.github.io/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+      <category term="程序人生" scheme="https://kaynechen.github.io/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
     
     
-      <category term="随笔" scheme="https://github.com/kaynechen/kaynechen.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://kaynechen.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
