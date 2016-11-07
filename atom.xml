@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Kayne Blog</title>
+  <title>Kayne&#39;s Blog</title>
   <subtitle>代码改变世界！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kaynechen.github.io/"/>
-  <updated>2016-11-03T07:54:15.639Z</updated>
+  <updated>2016-11-07T01:22:56.398Z</updated>
   <id>https://kaynechen.github.io/</id>
   
   <author>
@@ -17,12 +17,26 @@
   
   <entry>
     <title>开篇博客</title>
-    <link href="https://kaynechen.github.io/2016/11/03/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://kaynechen.github.io/2016/11/03/开篇博客/</id>
-    <published>2016-11-03T07:42:27.000Z</published>
-    <updated>2016-11-03T07:54:15.639Z</updated>
+    <link href="https://kaynechen.github.io/2016/11/07/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://kaynechen.github.io/2016/11/07/开篇博客/</id>
+    <published>2016-11-07T01:24:27.000Z</published>
+    <updated>2016-11-07T01:22:56.398Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://kaynechen.github.io/images/20150321_233822_109.jpg" alt=""></p>
+<h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><p>工作六年多了，一直想写博客，由于种种原因没有开篇，我想最主要是自己没有那份恒心。万事开头难，既然开头了，希望自己能坚持写下去。</p>
+<a id="more"></a>
+<h1 id="2-写作能力"><a href="#2-写作能力" class="headerlink" title="2. 写作能力"></a>2. 写作能力</h1><p>语文成绩一直很差，所以文笔不好，希望通过写博客来提高自己的文笔。每一篇博文先做到自己先阅读，再词语推敲，最后与大家分享。写得不好还请大家见谅！</p>
+<h1 id="3-知识积累"><a href="#3-知识积累" class="headerlink" title="3. 知识积累"></a>3. 知识积累</h1><p>工作这么多年，不断的学习新的技术，但为了适应项目，所学的知识也是零零碎碎。有些底层的东西还不够了解，只会用但不理解原理。写博客也是为了系统化的学习，以某一个知识点或一个系列来写，以便巩固基础。</p>
+<h1 id="4-交流学习"><a href="#4-交流学习" class="headerlink" title="4. 交流学习"></a>4. 交流学习</h1><blockquote>
+<p>俗话说：三人行必有我师！</p>
+</blockquote>
+<p>每个人都有自己的优缺点，通过博客与更多人交流、探讨、互相学习。</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://kaynechen.github.io/images/20150321_233822_109.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1. 前言&quot;&gt;&lt;/a&gt;1. 前言&lt;/h1&gt;&lt;p&gt;工作六年多了，一直想写博客，由于种种原因没有开篇，我想最主要是自己没有那份恒心。万事开头难，既然开头了，希望自己能坚持写下去。&lt;/p&gt;
     
     </summary>
     
