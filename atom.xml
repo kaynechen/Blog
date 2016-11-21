@@ -4,9 +4,9 @@
   <subtitle>代码改变世界！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://kaynechen.github.io/"/>
+  <link href="http://www.kayne.ml/"/>
   <updated>2016-11-21T01:47:36.673Z</updated>
-  <id>https://kaynechen.github.io/</id>
+  <id>http://www.kayne.ml/</id>
   
   <author>
     <name>Kayne Chen</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>ASP.NET Core 开发微信管理平台（1）：环境搭建</title>
-    <link href="https://kaynechen.github.io/2016/11/21/ASP.NET%20Core%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/"/>
-    <id>https://kaynechen.github.io/2016/11/21/ASP.NET Core开发微信管理平台/</id>
+    <link href="http://www.kayne.ml/2016/11/21/ASP.NET%20Core%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/"/>
+    <id>http://www.kayne.ml/2016/11/21/ASP.NET Core开发微信管理平台/</id>
     <published>2016-11-21T01:03:15.000Z</published>
     <updated>2016-11-21T01:47:36.673Z</updated>
     
@@ -85,23 +85,23 @@
     
     </summary>
     
-      <category term="ASP.NET Core" scheme="https://kaynechen.github.io/categories/ASP-NET-Core/"/>
+      <category term="ASP.NET Core" scheme="http://www.kayne.ml/categories/ASP-NET-Core/"/>
     
-      <category term="微信管理平台" scheme="https://kaynechen.github.io/categories/ASP-NET-Core/%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/"/>
+      <category term="微信管理平台" scheme="http://www.kayne.ml/categories/ASP-NET-Core/%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="ASP.NET Core" scheme="https://kaynechen.github.io/tags/ASP-NET-Core/"/>
+      <category term="ASP.NET Core" scheme="http://www.kayne.ml/tags/ASP-NET-Core/"/>
     
-      <category term="微信开发" scheme="https://kaynechen.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
+      <category term="微信开发" scheme="http://www.kayne.ml/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Visual studio Code" scheme="https://kaynechen.github.io/tags/Visual-studio-Code/"/>
+      <category term="Visual studio Code" scheme="http://www.kayne.ml/tags/Visual-studio-Code/"/>
     
   </entry>
   
   <entry>
     <title>开篇博客</title>
-    <link href="https://kaynechen.github.io/2016/11/07/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://kaynechen.github.io/2016/11/07/开篇博客/</id>
+    <link href="http://www.kayne.ml/2016/11/07/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.kayne.ml/2016/11/07/开篇博客/</id>
     <published>2016-11-07T01:24:27.000Z</published>
     <updated>2016-11-07T01:22:56.398Z</updated>
     
@@ -123,10 +123,10 @@
     
     </summary>
     
-      <category term="程序人生" scheme="https://kaynechen.github.io/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+      <category term="程序人生" scheme="http://www.kayne.ml/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
     
     
-      <category term="随笔" scheme="https://kaynechen.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://www.kayne.ml/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
