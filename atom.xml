@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kaynechen.github.io/"/>
-  <updated>2016-11-21T01:03:20.225Z</updated>
+  <updated>2016-11-21T01:47:36.673Z</updated>
   <id>https://kaynechen.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://kaynechen.github.io/2016/11/21/ASP.NET%20Core%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/"/>
     <id>https://kaynechen.github.io/2016/11/21/ASP.NET Core开发微信管理平台/</id>
     <published>2016-11-21T01:03:15.000Z</published>
-    <updated>2016-11-21T01:03:20.225Z</updated>
+    <updated>2016-11-21T01:47:36.673Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><p>.NET Core 发布已经有一段时间了,现在已经是 1.1 的版本了。作为 C# 程序员，要跟上微软的步伐。我是想以项目实战的方式学习，这样可以发现更多的实际使用问题，如果只是写写 Demo 比价难发现。</p>
 <p>学以实践，从这篇博文开始，使用 ASP.NET Core 开发微信管理平台，顺便也学习一下微信开发。</p>
@@ -31,97 +31,46 @@
 <p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。</p>
 <p>简单的说 Node.js 就是运行在服务端的 JavaScript。</p>
 <p><a href="http://yeoman.io/" target="_blank" rel="external"><strong>Yoman</strong></a></p>
-<pre><code>$ npm install -g yo
-$ npm install -g generator-aspnet
-</code></pre><p>Yoman 脚手架工具。通过 Yoman 生成 ASP.NET Core 项目结构和添加 ASP.NET Core 文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install -g yo</div><div class="line">$ npm install -g generator-aspnet</div></pre></td></tr></table></figure>
+<p>Yoman 脚手架工具。通过 Yoman 生成 ASP.NET Core 项目结构和添加 ASP.NET Core 文件。</p>
 <p><a href="https://bower.io/" target="_blank" rel="external"><strong>Bower</strong></a></p>
-<pre><code>$ npm install -g bower
-</code></pre><p>Bower资源包管理工具，通过 Bower 管理 jQuery、Bootstsrap 等前端资源。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g bower</div></pre></td></tr></table></figure>
+<p>Bower资源包管理工具，通过 Bower 管理 jQuery、Bootstsrap 等前端资源。</p>
 <h2 id="2-2-开发工具"><a href="#2-2-开发工具" class="headerlink" title="2.2 开发工具"></a>2.2 开发工具</h2><p><strong>Visual Studio Code</strong><a href="http://code.visualstudio.com/" target="_blank" rel="external">[下载地址]</a></p>
 <p>Visual Studio Code 针对于编写现代 Web 和云应用的跨平台源代码编辑器。支持 Mac OS X、Windows 和 Linux。</p>
 <p><a href="http://www.sqlite.org/" target="_blank" rel="external"><strong>SQLite</strong> </a></p>
 <p>SQLite 是跨平台的轻型数据库，无需安装和管理配置，以文件形式存储。而且 EntityFrameworkCore 也支持 SQLite。</p>
 <h1 id="3-项目创建"><a href="#3-项目创建" class="headerlink" title="3. 项目创建"></a>3. 项目创建</h1><p>使用 Yoman 创建 ASP.NET Core 项目</p>
-<pre><code>$ yo aspnet
-</code></pre><p><img src="https://kaynechen.github.io/images/20161117224003.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yo aspnet</div></pre></td></tr></table></figure>
+<p><img src="https://kaynechen.github.io/images/20161117224003.png" alt=""></p>
 <p>为了更好的了解ASP.NET Core，我选择 Empty Web Application</p>
 <p><img src="https://kaynechen.github.io/images/20161117224205.png" alt=""></p>
 <p>项目已经创建完成。</p>
 <p>接下来我们运行项目试试，Yoman 生成项目后下面有提示。</p>
-<pre><code>$ dotnet restore //还原引用包
-$ dotnet build   //生成项目（这一步可以省略，run 的时候会先执行 build）
-$ dotnet run     //运行项目
-</code></pre><p><img src="https://kaynechen.github.io/images/20161118095801.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ dotnet restore //还原引用包</div><div class="line">$ dotnet build   //生成项目（这一步可以省略，run 的时候会先执行 build）</div><div class="line">$ dotnet run     //运行项目</div></pre></td></tr></table></figure>
+<p><img src="https://kaynechen.github.io/images/20161118095801.png" alt=""></p>
 <p><img src="https://kaynechen.github.io/images/20161118100020.png" alt=""></p>
 <p>在浏览器里输入：<a href="http://localhost:5000" target="_blank" rel="external">http://localhost:5000</a> 。Hello World! 项目运行成功。</p>
 <p><img src="https://kaynechen.github.io/images/20161118100111.png" alt=""></p>
 <h1 id="4-前端框架"><a href="#4-前端框架" class="headerlink" title="4. 前端框架"></a>4. 前端框架</h1><p>界面使用基于 Bootstrap 的 AdminLTE 响应式模版，内置登录、注册、锁屏、404错误、500错误页面等，而且是开源免费的。</p>
 <p>使用 Bower 管理前端资源包，我们先通过 Yoman 添加 Bower 文件</p>
-<pre><code>$ yo aspnet:bowerjson
-$ bower install jquery
-$ bower install bootstrap
-$ bower install admin-lte
-</code></pre><p><img src="https://kaynechen.github.io/images/20161118215652.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ yo aspnet:bowerjson</div><div class="line">$ bower install jquery</div><div class="line">$ bower install bootstrap</div><div class="line">$ bower install admin-lte</div></pre></td></tr></table></figure>
+<p><img src="https://kaynechen.github.io/images/20161118215652.png" alt=""></p>
 <p>接下来我们用 Visual Studio Code 打开项目，打开文件的时候，VS Code 会根据文件类型给出安装扩展的建议，很方便。</p>
 <p><img src="https://kaynechen.github.io/images/20161118215955.png" alt=""></p>
 <p>但是添加 ASP.NET Core 项就没那么方便了，如：Controller、View、Class、Interface等，需要自己手写。但使用 Yoman 可以很方便的创建。使用 Yoman 创建一个 Controller 和 View。</p>
-<pre><code>$ yo aspnet:mvccontroller AccountController
-$ yo aspnet:mvcview Login
-</code></pre><p>把 AdminLTE 的登录页面的代码拷贝到 Login.cshtml。使用 Bower 添加 Font-Awesome、iCheck 资源。修改 js、css 引用路径。</p>
-<pre><code>$ bower install font-awesome
-$ bower install icheck
-</code></pre><p>登录界面与前端资源都准备好了，下面在 project.json 里添加 mvc 包引用。</p>
-<pre><code>&quot;dependencies&quot;: {
-&quot;Microsoft.NETCore.App&quot;: {
-  &quot;version&quot;: &quot;1.0.1&quot;,
-  &quot;type&quot;: &quot;platform&quot;
-},
-&quot;Microsoft.AspNetCore.Diagnostics&quot;: &quot;1.0.0&quot;,
-&quot;Microsoft.AspNetCore.Server.IISIntegration&quot;: &quot;1.0.0&quot;,
-&quot;Microsoft.AspNetCore.Server.Kestrel&quot;: &quot;1.0.1&quot;,
-&quot;Microsoft.Extensions.Logging.Console&quot;: &quot;1.0.0&quot;,
-&quot;Microsoft.Extensions.Configuration.EnvironmentVariables&quot;: &quot;1.0.0&quot;,
-&quot;Microsoft.Extensions.Configuration.FileExtensions&quot;: &quot;1.0.0&quot;,
-&quot;Microsoft.Extensions.Configuration.Json&quot;: &quot;1.0.0&quot;,
-&quot;Microsoft.Extensions.Configuration.CommandLine&quot;: &quot;1.0.0&quot;,
-
-&quot;Microsoft.AspNetCore.Mvc&quot;: &quot;1.1.0&quot;
-}
-</code></pre><p>接下来我们在 Startup.cs 中添加 Mvc 服务和配置路由。Startup 有两个方法：ConfigureServices、Configure，ConfigureServices：配置我们应用程序中的各种服务；Configure：用于处理我们程序中的各种中间件（middleware）。路由是以中间件的方式配置的。详见：<a href="http://www.cnblogs.com/Wddpct/p/5713986.html" target="_blank" rel="external">ASP.NET Core 介绍和项目解读</a>。</p>
-<pre><code>public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddMvc();
-    }
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddConsole();
-
-        if (env.IsDevelopment())
-        {
-            app.UseDeveloperExceptionPage();
-        }
-
-        // app.Run(async (context) =&gt;
-        // {
-        //     await context.Response.WriteAsync(&quot;Hello World!&quot;);
-        // });
-
-        app.UseMvc(routes =&gt;
-        {
-            routes.MapRoute(
-            name: &quot;default&quot;,
-            template: &quot;{controller=Account}/{action=Login}/{id?}&quot;
-            );
-        });
-    }
-}
-</code></pre><p>OK，路由也配好了，我们使用 <code>$ dotnet run</code> 运行看看。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ yo aspnet:mvccontroller AccountController</div><div class="line">$ yo aspnet:mvcview Login</div></pre></td></tr></table></figure>
+<p>把 AdminLTE 的登录页面的代码拷贝到 Login.cshtml。使用 Bower 添加 Font-Awesome、iCheck 资源。修改 js、css 引用路径。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ bower install font-awesome</div><div class="line">$ bower install icheck</div></pre></td></tr></table></figure>
+<p>登录界面与前端资源都准备好了，下面在 project.json 里添加 mvc 包引用。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">"dependencies": &#123;</div><div class="line">"Microsoft.NETCore.App": &#123;</div><div class="line">  "version": "1.0.1",</div><div class="line">  "type": "platform"</div><div class="line">&#125;,</div><div class="line">"Microsoft.AspNetCore.Diagnostics": "1.0.0",</div><div class="line">"Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",</div><div class="line">"Microsoft.AspNetCore.Server.Kestrel": "1.0.1",</div><div class="line">"Microsoft.Extensions.Logging.Console": "1.0.0",</div><div class="line">"Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",</div><div class="line">"Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",</div><div class="line">"Microsoft.Extensions.Configuration.Json": "1.0.0",</div><div class="line">"Microsoft.Extensions.Configuration.CommandLine": "1.0.0",</div><div class="line"></div><div class="line">"Microsoft.AspNetCore.Mvc": "1.1.0"</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>接下来我们在 Startup.cs 中添加 Mvc 服务和配置路由。Startup 有两个方法：ConfigureServices、Configure，ConfigureServices：配置我们应用程序中的各种服务；Configure：用于处理我们程序中的各种中间件（middleware）。路由是以中间件的方式配置的。详见：<a href="http://www.cnblogs.com/Wddpct/p/5713986.html" target="_blank" rel="external">ASP.NET Core 介绍和项目解读</a>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">public class Startup</div><div class="line">&#123;</div><div class="line">	public void ConfigureServices(IServiceCollection services)</div><div class="line">	&#123;</div><div class="line">		services.AddMvc();</div><div class="line">	&#125;</div><div class="line">	public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)</div><div class="line">	&#123;</div><div class="line">		loggerFactory.AddConsole();</div><div class="line">		</div><div class="line">		if (env.IsDevelopment())</div><div class="line">		&#123;</div><div class="line">			app.UseDeveloperExceptionPage();</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		// app.Run(async (context) =&gt;</div><div class="line">		// &#123;</div><div class="line">		// 	await context.Response.WriteAsync(&quot;Hello World!&quot;);</div><div class="line">		// &#125;);</div><div class="line">		</div><div class="line">		app.UseMvc(routes =&gt;</div><div class="line">		&#123;</div><div class="line">			routes.MapRoute(</div><div class="line">			name: &quot;default&quot;,</div><div class="line">			template: &quot;&#123;controller=Account&#125;/&#123;action=Login&#125;/&#123;id?&#125;&quot;</div><div class="line">			);</div><div class="line">		&#125;);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>OK，路由也配好了，我们使用 <code>$ dotnet run</code> 运行看看。</p>
 <p><img src="https://kaynechen.github.io/images/20161120223348.png" alt=""></p>
 <p>为什么js、css都是404？因为没有添加静态文件的中间件（middleware），先在 project.json 中添加包的引用：</p>
-<pre><code>&quot;Microsoft.AspNetCore.StaticFiles&quot;: &quot;1.0.0&quot;
-</code></pre><p>再在路由上面添加： <code>app.UseStaticFiles();</code> 再运行项目就没问题了</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">"Microsoft.AspNetCore.StaticFiles": "1.0.0"</div></pre></td></tr></table></figure>
+<p>再在路由上面添加： <code>app.UseStaticFiles();</code> 再运行项目就没问题了</p>
 <p><img src="https://kaynechen.github.io/images/20161120230735.png" alt=""></p>
 <h1 id="5-终结"><a href="#5-终结" class="headerlink" title="5. 终结"></a>5. 终结</h1><p>这篇文章只是简单讲解 ASP.NET Core 项目的创建。但需要了解前端一些知识，如：node.js、Yoman、Bower。还有 ASP.NET Core 的一些配置，以及中间件（middleware）的概念。</p>
 <p>我也是边学边做，写的不对、不好的地方，大家给我留言或加 QQ群（558360458 ）互相探讨与学习。源码我会放在 GitHub 和群共享。</p>
