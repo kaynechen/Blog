@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://www.kayne.ml/2016/11/21/ASP.NET%20Core%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</loc>
+    <lastmod>2016-11-21T01:47:36.673Z</lastmod>
+    <data>
+        <display>
+        <title>ASP.NET Core 开发微信管理平台（1）：环境搭建</title>
+        <pubTime>2016-11-21T01:03:15.000Z</pubTime>
+        
+        <tag>ASP.NET Core</tag>
+         
+        <tag>微信开发</tag>
+         
+        <tag>Visual studio Code</tag>
+         
+         
+           
+             
+              <breadCrumb title="ASP.NET Core" url="http://www.kayne.ml/categories/ASP-NET-Core/"/>
+          
+             
+              <breadCrumb title="微信管理平台" url="http://www.kayne.ml/categories/ASP-NET-Core/%E5%BE%AE%E4%BF%A1%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kayne.ml/2016/11/07/%E5%BC%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2016-11-07T01:22:56.398Z</lastmod>
+    <data>
+        <display>
+        <title>开篇博客</title>
+        <pubTime>2016-11-07T01:24:27.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="程序人生" url="http://www.kayne.ml/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
